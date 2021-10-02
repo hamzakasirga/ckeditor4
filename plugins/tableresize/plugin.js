@@ -382,6 +382,7 @@
 
 		if ( evt.name == 'mouseout' ) {
 			// Bypass interal mouse move.
+			document.getBody().setStyle('cursor', 'default');
 			if ( !target.is( 'table' ) )
 				return;
 
